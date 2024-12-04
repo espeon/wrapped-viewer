@@ -67,7 +67,7 @@ export function Subtitles({ subtitles, currentTime, onSeek }: SubtitlesProps) {
               {subtitle.text}
             </p>
             <div
-              className="top-32 relative"
+              className="top-[15vh] relative"
               ref={isSubtitleActive(subtitle) ? activeSubtitleRef : null}
             />
           </div>
