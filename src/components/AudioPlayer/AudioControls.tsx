@@ -16,18 +16,18 @@ export function AudioControls({ isPlaying, onPlayPause, onSkipForward, onSkipBac
         className="p-2 rounded-full hover:bg-gray-800 transition-colors"
         aria-label="Skip backward"
       >
-        <SkipBack className="w-8 h-8 text-gray-300" />
+        <SkipBack className="w-6 h-6 text-gray-300" />
       </button>
       
       <button
         onClick={onPlayPause}
-        className="p-4 rounded-full bg-indigo-600 hover:bg-indigo-700 transition-colors"
+        className="p-2 rounded-full bg-indigo-600 hover:bg-indigo-700 transition-colors"
         aria-label={isPlaying ? 'Pause' : 'Play'}
       >
         {isPlaying ? (
-          <Pause className="w-10 h-10 text-white" />
+          <Pause className="w-6 h-6 text-white" />
         ) : (
-          <Play className="w-10 h-10 text-white" />
+          <Play className="w-6 h-6 text-white" />
         )}
       </button>
       
@@ -36,7 +36,7 @@ export function AudioControls({ isPlaying, onPlayPause, onSkipForward, onSkipBac
         className="p-2 rounded-full hover:bg-gray-800 transition-colors"
         aria-label="Skip forward"
       >
-        <SkipForward className="w-8 h-8 text-gray-300" />
+        <SkipForward className="w-6 h-6 text-gray-300" />
       </button>
     </div>
   );

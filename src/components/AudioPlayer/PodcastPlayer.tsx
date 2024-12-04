@@ -99,7 +99,7 @@ export function PodcastPlayer() {
       </div>
 
       {/* Controls */}
-      <div className="fixed bottom-0 left-0 right-0 bg-gradient-to-t from-gray-900 to-transparent pt-20 pb-6 px-6 space-y-4">
+      <div className="fixed bottom-0 left-0 right-0 bg-gradient-to-t from-gray-900 to-transparent pt-4 pb-2 px-6 space-y-4">
         <ProgressBar
           currentTime={currentTime}
           duration={duration}
@@ -111,6 +111,7 @@ export function PodcastPlayer() {
           onSkipForward={handleSkipForward}
           onSkipBackward={handleSkipBackward}
         />
+        <div className="text-gray-500 text-xs text-center">This project is a fan-made creation and is not sponsored, approved, or licensed by Spotify in any way.</div>
       </div>
 
       <audio ref={audioRef} src={AUDIO_URL} />

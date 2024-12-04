@@ -73,7 +73,10 @@ export function Subtitles({ subtitles, currentTime, onSeek }: SubtitlesProps) {
           </div>
         ))}
       </div>
-      <div className="h-32" />
+      <div className="text-gray-500 text-xs my-16">This podcast viewer is an independent project and is not affiliated with, endorsed by, or officially connected to Spotify or Spotify Technology S.A.
+All trademarks, service marks, and trade names used herein are the property of their respective owners. Any references to Spotify or Spotify Wrapped are purely for descriptive purposes and do not imply any official relationship or sponsorship.
+This project is a fan-made creation and is not sponsored, approved, or licensed by Spotify in any way.</div>
+<div className="h-16" />
     </div>
   );
 }
