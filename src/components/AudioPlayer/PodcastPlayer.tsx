@@ -111,7 +111,7 @@ export function PodcastPlayer() {
           onSkipForward={handleSkipForward}
           onSkipBackward={handleSkipBackward}
         />
-        <div className="text-gray-500 text-xs text-center">This project is a fan-made creation and is not sponsored, approved, or licensed by Spotify in any way.</div>
+        <div className="text-gray-500 text-xs text-center">This project is a fan-made creation and is not sponsored, approved, or licensed by Spotify in any way. <a href='https://github.com/espeon/wrapped-viewer' className="text-blue-500">View the project on GitHub</a></div>
       </div>
 
       <audio ref={audioRef} src={AUDIO_URL} />
